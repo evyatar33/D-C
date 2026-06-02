@@ -1,5 +1,6 @@
 const express = require("express");
-const { returnSubmitLength, deleteName, updateRole } = require("../logic/submitLogic");
+const { returnSubmitLength, deleteName, updateRole } = require("../Logic/submitLogic");
+// Fixed folder casing for Linux/Render, where "Logic" and "logic" are different paths.
 const router = express.Router();
 
 router.post("/", async function (req, res) {

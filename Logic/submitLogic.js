@@ -5,7 +5,8 @@ const {
   checkIfIdExists,
   deleteNameById,
   changeRoleById,
-} = require("../dal/usersDal");
+} = require("../DAL/usersDal");
+// Fixed folder casing for Linux/Render, where "DAL" and "dal" are different paths.
 
 async function returnSubmitLength(data) {
   let name = data.name;
